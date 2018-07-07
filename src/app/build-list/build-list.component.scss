@@ -1,0 +1,23 @@
+.buildList{
+  .card-body{
+    padding: 0;
+  }
+  a{
+    font-size: 13px;
+  }
+  .circle {
+    padding: 3px 5px;
+    background: #0ebac5;
+    color: #fff;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 13px;
+    
+  }
+}

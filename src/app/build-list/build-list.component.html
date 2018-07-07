@@ -1,0 +1,19 @@
+<div class="buildList">
+  <div class="card">
+    <div class="card-header">
+      <strong class="text-uppercase m-0 text-muted">build</strong>
+    </div>
+    <div class="card-body">
+
+      <div class="list-group list-group-flush" *ngFor="let build of buildList">
+        <a href="#" class="list-group-item list-group-item-action" [ngClass]="{'active': selectedItem == build}">
+          <span class="circle">
+             {{build.buildLetter}}
+          </span>
+          {{build.buildName}}
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

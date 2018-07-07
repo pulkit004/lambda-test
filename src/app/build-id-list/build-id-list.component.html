@@ -1,0 +1,36 @@
+<div class="buildIdList">
+  <div class="card">
+    <div class="card-header">
+      <div class="d-flex flex-row align-items-center justify-content-between">
+        <div>
+          <a href="#">
+            Test ID
+            <i class="fa fa-sort-amount-desc fa-fw" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            Date
+            <i class="fa fa-sort-amount-desc fa-fw" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="list-group list-group-flush" *ngFor="let buildId of buildIdList">
+        <a href="#" class="list-group-item list-group-item-action" [ngClass]="{'active': selectedItem == buildId}">
+          <div class="d-flex flex-row align-items-center justify-content-between">
+            <div>
+              {{buildId.id}}
+            </div>
+            <div>
+              {{buildId.date}}
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
